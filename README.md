@@ -3,6 +3,9 @@ A shiny app which uses the BaDaAn package to plot some data from kolada
 
 
 library(shiny)
+devtools::install_github('wountoto/Lab5_AdvR',subdir = 'BaDaAn')
+library(BaDaAn)
+
 
 # Easiest way is to use runGitHub
 runGitHub("Shiny_BaDaAn", "rstudio", ref="main")
