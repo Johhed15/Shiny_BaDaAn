@@ -12,8 +12,8 @@ ui <- fluidPage(
             selectInput('mun', 'Plot cost variables for a municipality',
                         c('Stockholm' = 'Stockholm',
                         'Uppsala' = 'Uppsala',
-                         'Göteborg' = 'Göteborg',
-                         'Malmö' = 'Malmö')),
+                         'Goeteborg' = 'Goeteborg',
+                         'Malmoe' = 'Malmoe')),
             
             actionButton("ab_1" ,"Show the plot"),
             
@@ -23,8 +23,8 @@ ui <- fluidPage(
                                'Choose municipalities you want to compare',
                                c('Stockholm' = 'stockholm',
                                  'Uppsala' = 'uppsala',
-                                 'Göteborg' = 'göteborg',
-                                 'Malmö' = 'malmö')),
+                                 'Goeteborg' = 'goeteborg',
+                                 'Malmoe' = 'malmoe')),
             
             uiOutput("sliders"),
             
