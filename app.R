@@ -118,7 +118,8 @@ server <- function(input, output, session){
   # Printing a table from the muniCorr function
   output$cortab <- renderTable({
     cor_plot_reactive()
-  })
+    
+  },rownames=TRUE)
   
   # Action button 4
   model_plot_reactive <- eventReactive(input$ab_4, {
